@@ -1,0 +1,17 @@
+Null Hypothesis : There is no difference in effectiveness between retrieval Model A and Model B
+If null hypothesis is false for a pair of retrieval model,
+it means Model B is more effective than Model A
+
+    Model A        Model B          t-value             p-value       Null hypothesis (True/False)
+
+Task_1_Lucene  Task_3a_BM25   5.49324925584       6.30408843979e-07              False            
+Task_1_TFIDF   Task_1_Lucene  3.86385591305       0.000158287428355              False            
+Task_1_TFIDF   Task_3a_TFIDF  -0.101389312366     0.459819494603                  True            
+Task_1_TFIDF   Task_1_BM25    9.78278975569       1.35623108077e-13              False            
+Task_1_Lucene  Task_2_BM25    -2.00713299212      0.0250247791607                False            
+Task_1_BM25    Task_2_BM25    -6.28860576888      3.61135599308e-08              False            
+Task_1_Lucene  Task_2_TFIDF   -3.50205253302      0.000484717894166              False            
+Task_1_TFIDF   Task_2_TFIDF   -0.309791466497     0.378990926124                  True            
+Task_1_Lucene  Task_3a_TFIDF  -4.33773844836      3.40348871347e-05              False            
+Task_1_BM25    Task_1_Lucene  -5.59046446013      4.45915140096e-07              False            
+Task_1_BM25    Task_3a_BM25   -0.804004125745     0.212563224502                  True            
